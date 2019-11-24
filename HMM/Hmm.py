@@ -106,7 +106,7 @@ class OrgRecognize:
 
 
 if __name__ == '__main__':
-    input_vectors = ['中国人民银行', '北京分行', '和', '世界银行', '是', '金融', '机构']  # KBXKXCD
+    input_vectors = ['北大', '博物馆', '在', '北京大学', '北侧']  # CDXKB
     ner = OrgRecognize(input_vectors)
     print(ner.predict())
     org = ner.get_org()

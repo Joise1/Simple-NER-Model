@@ -114,7 +114,7 @@ if __name__ == '__main__':
     输出：句子的序列标注结果/组织结构名
     思路：统计获得HMM模型参数，维特比算法求解最大概率标注序列
     '''
-    input_vectors = ['北大', '博物馆', '在', '北京大学', '北侧']  # 输出结果：CDXKB 北大博物馆
+    input_vectors = ['北大', '博物馆', '在', '北京大学', '北侧']  # CDXKB 北大博物馆
     ner = OrgRecognize(input_vectors)
     print(ner.predict())
     org = ner.get_org()
